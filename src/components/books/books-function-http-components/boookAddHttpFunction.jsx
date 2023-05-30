@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function BookAddFunction() {
+function BookAddHttpFunction() {
     const [title, setTitle] = useState('ADD NEW BOOK');
     const [newBook, setNewBook] = useState({
       id: 0,
@@ -92,4 +92,4 @@ function BookAddFunction() {
       );
 }
 
-export default BookAddFunction;
+export default BookAddHttpFunction;
