@@ -32,7 +32,9 @@ function Header() {
             <Link className="nav-link" to="/book-store-redux-function">Book Store Redux</Link>
           </li>
 
-          
+          <li className="nav-item">
+            <Link className="nav-link" to="/saga-book-demo">Saga Book Store</Link>
+          </li>
           
         </ul>
       </div>

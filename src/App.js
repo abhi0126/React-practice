@@ -17,7 +17,9 @@ import CookiesContainer from "./components/react-redux-cookie-demo/components/co
 import { Provider } from "react-redux";
 // import store from "./components/react-redux-cookie-demo/store/store";
 import BookStoreReduxFunction from "./components/redux/react-redux-book-demo/components/bookStoreReduxFunction";
-import store from "./components/redux/react-redux-book-demo/store/store";
+// import store from "./components/redux/react-redux-book-demo/store/store";
+import SagaBookStoreReduxFunction from "./components/redux/saga-book-demo/components/sagaBookStoreReduxFunction";
+import sagaStore from "./components/redux/saga-book-demo/store/sagaStore";
 
 function App() {
   return (
@@ -29,7 +31,7 @@ function App() {
     //   {/* <BookStore /> */}
     //   <BookStoreFunction />
     // </React.Fragment>
-    <Provider store={store}>
+    <Provider store={sagaStore}>
       <div>
         <Header></Header>
         <Routes>
@@ -48,6 +50,7 @@ function App() {
           <Route path='book-add-http-function' element={<BookAddHttpFunction />}></Route>
           <Route path='cookies-container-redux' element={<CookiesContainer />}></Route>
           <Route path='book-store-redux-function' element={<BookStoreReduxFunction />}></Route>
+          <Route path='saga-book-demo' element={<SagaBookStoreReduxFunction />}></Route>
         </Routes>
       </div>
     </Provider>
